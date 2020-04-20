@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+-->
+    <!-- Para el mapa interactivo  -->
+    
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" ></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *">-->
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Perdidogs</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="color-theme-orange">
+    <div id="app">
+      <div class="panel panel-left panel-reveal ">
+                      <div class="block">
+                        <input type="button" class="panel-close col button button-small button-outline" id="logout" value="Cerrar sesion">
+                        
+                      </div>
+        </div>
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+    
+                <!-- Top Navbar -->
+                <div class="navbar oculto" id="panel" >
+                    <div class="navbar-inner">
+                    <p><a class="panel-open" href="#"> Datos</a></p>
+                    
+                                    
+                    </div>
+                </div>
+        
+                <!-- Toolbar -->
+                <div class="toolbar toolbar-bottom-md visible" id="t1">
+                    <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="/Logeo/" class="link">Inicio sesion</a>
+                    <a href="/Registro/" class="link">Registro </a>
+                    </div>
+                </div>
+                
+                
+        
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <!-- Botones de navegacion-->
+                    
+                    <h1 align="center">Perdidogs</h1>
+                    <center>
+                    
+                    <img src="pata.png" alt="logo de la app" class="ajuste"></img>
+                    </center></br></br>
+                    <input type="button" class="col button button-fill color-red recorte" value="Mascotas perdidas" id="bp"></br></br>
+                    <input type="button" class="col button button-fill color-green recorte" value="Mascotas encontradas" id="be"></br></br>
+                    <input type="button" class="col button button-fill color-black recorte" value="Campañas/Noticias" id="bc"></br></br>
+                    <input type="button" class="col button button-fill color-pink recorte" value="Mapa de veterinarias" id="bm"></br></br>
+                   
+                    <p>
+                      <!-- Open in login screen-modal that is already in DOM-->
+                      
+                    </p>
+                    
+                    
+                    <!-- Link to another page -->
+                  
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyCL25dI6izOnFHsTfRmOKsIVY9wvry9w1Q",
+            authDomain: "perdidogs-ec0bd.firebaseapp.com",
+            databaseURL: "https://perdidogs-ec0bd.firebaseio.com",
+            projectId: "perdidogs-ec0bd",
+            storageBucket: "",
+            messagingSenderId: "57189203462",
+            appId: "1:57189203462:web:2e073ecc2cc6c9480b0d87"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          var db = firebase.firestore();
+    </script>
+</body>
+
+</html>

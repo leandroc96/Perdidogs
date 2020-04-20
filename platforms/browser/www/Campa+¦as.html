@@ -1,0 +1,80 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="Campañas">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+        </div>
+        <div class="title">Mascotas encontradas</div>
+        </div>
+    </div>
+    <div class="page-content">
+            <div id="alc" class="visible">
+                     <h4> Recorda que para <b>publicar</b> tenes que <a href="/Registrarte/" class="link">registrarte</a> y si ya estas registrado, <a href="/Logeo/" class="link">iniciar sesion</a></h4>
+            </div>
+            <div id="botonc" class="oculto">
+                    <a class="col button button-small button-outline popup-open" data-popup=".popup-about">Publicar</a>
+            </div>
+              <div class="list media-list" id="ccampañas">
+                              <ul>
+                                <li>
+                                  <div class="item-content">
+                                    <div class="item-media"><img src="pata.png" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Bienvenido</div>
+                                      </div>
+                                      <div class="item-subtitle">17-10-2019</div>
+                                      <p>Bienvenido, aca vas a poder publicar fechas de campañas y noticias de interes!</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                
+                              </ul>
+            </div>
+            <div class="popup popup-about">
+            <div class="block">
+                  <!-- Close Popup -->
+                  <p><a class="link popup-close" href="#">Cerrar Popup</a></p>
+                    <div class="list no-hairlines-md">
+                              <ul>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label"><b>Titulo de la campaña</b></div>
+                                    <div class="item-input-wrap">
+                                      <input type="text" placeholder="Titulo de la campaña" id="tdlc" required>
+                                      <span class="input-clear-button"></span>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label"><b>Descripcion</b></div>
+                                    <div class="item-input-wrap">
+                                      <input type="text" placeholder="Descripcion" id="ddlc" required>
+                                      <span class="input-clear-button"></span>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label"><b>Fecha de la campaña</b></div>
+                                    <div class="item-input-wrap">
+                                      <input type="date" placeholder="Fecha de la campaña" id="fdlc" required>
+                                      
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <input type="button" class="col button button-fill popup-close" id="pcamp" value="Publicar">
+                
+             
+        
+        </div>
+
+       
+    </div>

@@ -1,0 +1,100 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="Perdidos">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+            
+        </div>
+        <div class="title">Mascotas perdidas</div>
+        
+        </div>
+        
+    </div>
+    <div class="page-content ">
+        </br>
+        <p></p>
+        <a class="col button button-small button-outline popup-open" data-popup=".popup-about">Publicar</a>
+        <div class="swiper-container swiper-init demo-swiper">
+            <div class="swiper-wrapper" id="publicacionesPerd">        
+                            <div class="card demo-facebook-card swiper-slide">
+                                <div class="card-header">
+                                    <div class="demo-facebook-name" id="np0">John Doe</div>
+                                </div>
+                                      <div class="card-content card-content-padding">
+                                           <img src="https://scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/57411739_2368249356521000_4741627938980495360_n.jpg?_nc_cat=109&_nc_oc=AQlv05CvN1YXlyhTd5sb0e7N_rUHctOZ4z_3XujtpH6m61lT98yjQ5GMRSNeBYvmHhI&_nc_ht=scontent.faep12-1.fna&oh=20c3088ce55cf05c74890793dc2e6d42&oe=5E3D9F8F" height="75%" width="100%"/>
+                                            <h2 id="nmp0">Lito</h2>
+                                            <p><label >Visto por ultima vez en:</label><div id="vmp0"></div></p>
+                                            <p><label >Descripcion:</label><div id="dmp0"></div></p>
+                                            <p><label>Particularidades:</label><div id="pmp0"></div></p>
+                                            <p><label>Contacto:</label><div id="cmp0"></div ></p>
+                                        
+                                      </div>
+                                      <div class="card-footer"><a href="#" class="link">Share</a></div>
+                            </div>
+                            
+        </div>
+        
+        <div class="popup popup-about">
+            <div class="block">
+                  <!-- Close Popup -->
+                  <p><a class="link popup-close" href="#">Cerrar Popup</a></p>
+                  <div class="item-inner">
+                        <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Nombre de la mascota</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Nombre de la mascota">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Visto por ultima vez en</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Visto por ultima vez en">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Descripcion</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Descripcion">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                        </li>
+                        
+                        
+                        <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Particularidades</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Particularidades" >
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                        </li>
+                        <input type="button" class="col button button-small button-outline" id="pcam" value="Publicar imagen desde la camara">
+                        </br></br>
+                        <input type="button" class="col button button-small button-outline" id="pgal" value="Publicar imagen desde la galeria">
+                        </br></br>
+                        <input type="button" class="col button button-fill popup-close" id="pperd" value="Publicar">
+                        
+                        
+                        
+                  </div>
+            </div>
+             
+        
+        </div>
+  </div>
+                            
+     </div>
+</div> 

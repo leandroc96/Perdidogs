@@ -1,0 +1,93 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="Perdidos">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+            
+        </div>
+        <div class="title">Mascotas perdidas</div>
+        
+        </div>
+        
+    </div>
+    <div class="page-content ">
+        </br>
+        <p></p>
+        <div id="botonp" class="oculto">
+            <a class="col button button-small button-outline popup-open" data-popup=".popup-about">Publicar</a>
+        </div>
+        <div id="adp" class="visible">
+                <h4> Recorda que para <b>publicar</b> tenes que <a href="/Registrarte/" class="link">registrarte</a> y si ya estas registrado, <a href="/Logeo/" class="link">iniciar sesion</a></h4>
+        </div>
+        <div class="swiper-container demo-swiper">
+            <div class="swiper-wrapper" id="publicacionesPerd">        
+                            <div class="card demo-facebook-card swiper-slide" id="p">
+                                <div class="card-header">
+                                    <div class="demo-facebook-name" id="ndp">John Doe</div>
+                                </div>
+                                      <div class="card-content card-content-padding">
+                                           <center><img src="https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/11898606_10206189633613193_5259961071496413925_n.jpg?_nc_cat=101&_nc_oc=AQnN0WbDZtwl_NIqphderj5dnt9wq8FBRU-PQOco46msjRl8fGwqF1IU0W5Nc3c_1Kk&_nc_ht=scontent.faep8-1.fna&oh=51a9f7ae57e38f82eaa164674d5f62f4&oe=5E1C3833" height="350px" width="100%"/></center>
+                                            <h2 id="nmp">Maximo</h2>
+                                            Visto por ultima vez en: <b id="vmp">Aca</b></br></br>
+                                            Descripcion: <b id="dmp">te mostramos un modelo de como va quedar tu</b></br></br>
+                                            Contacto: <b id="cmp">publicacion</b></br></br>
+                                        
+                                      </div>
+                                      <div class="card-footer"><a href="#" class="link" id="dp" >Descargar</a></div>
+                            </div>
+                            
+                </div>
+        
+        </div>
+        <div class="popup popup-about">
+            <div class="block">
+                  <!-- Close Popup -->
+                  <p><a class="link popup-close" href="#">Cerrar Popup</a></p>
+                  <div class="list no-hairlines-md">
+                          <ul>
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Nombre de la mascota</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Nombre de la mascota:" id="ndmp" required>
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Visto por ultima vez en</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Visto por ultima vez en:" id="vpuve" required>
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label"><b>Descripcion</b></div>
+                                <div class="item-input-wrap">
+                                  <input type="text" placeholder="Descripcion" id="descp" required>
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+                           
+                          </ul>
+                        </div>
+                        <center><img src="" width="100px" height="100%" id="prp" class="oculto"></center>
+                        <input type="button" class="col button button-small button-outline" id="pgal" value="Publicar imagen desde la galeria">
+                        </br></br>
+                        <input type="button" class="col button button-fill popup-close" id="pperd" value="Publicar">
+                  
+            </div>
+             
+        
+        </div>
+                            
+     </div>
+</div> 

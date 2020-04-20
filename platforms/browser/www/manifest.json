@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Perdidogs",
+  "short_name": "Perdidogs",
+  "version": "com.phonegap.helloworld",
+  "description": "Perdidogs, una aplicacion donde vas a poder publicar mascotas perdidas, encontradas y mantenerte al tanto de las noticias sobre campañas.",
+  "author": "Leandro Cabrera",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}
